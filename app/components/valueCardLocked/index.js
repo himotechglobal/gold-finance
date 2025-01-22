@@ -12,7 +12,7 @@ const ValueCardLocked = () => {
   ];
 
   return (
-    <div className="mt-20">
+    <div className="mt-40">
       <Wrapper>
         <div className="valueCardLocked flex items-center justify-around max-sm:min-w-[389px]">
           <div className="flex items-center justify-center h-[75px] w-[75px] bg-white rounded-[8px]">
