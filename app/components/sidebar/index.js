@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../button";
 
 const Sidebar = ({ sidebarOpen }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
   let sidebarData = {
     btnText: ["BUY GOLD COIN", "BUY GOLD SHARE", "MINT NFT"],
     links: [
@@ -36,7 +38,12 @@ const Sidebar = ({ sidebarOpen }) => {
     ],
   };
 
-  let isMobile = window.innerWidth < 1024;
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <div
