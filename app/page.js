@@ -7,7 +7,7 @@ import CoinDetails from "./components/coinDetails";
 const Home = () => {
   return (
     <>
-      <div className="ellipse1 absolute"></div>
+      <div className="absolute z-[-1] xl:w-[710px] w-[300px] xl:h-[710px] h-[300px] rounded-full bg-[#f9e998] ellipse1"></div>
       <Navbar />
       <ValueCard />
       <CoinDetails />

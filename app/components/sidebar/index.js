@@ -21,7 +21,7 @@ const Sidebar = ({ sidebarOpen }) => {
 
   return (
     <div
-      className={`fixed top-16 left-0 h-full w-64 bg-[#202936] text-white shadow-lg transform transition-transform duration-300 ease-in-out ${
+      className={`fixed top-12 xl:top-16 left-0 h-full w-64 bg-[#202936] text-white shadow-lg transform transition-transform duration-300 ease-in-out ${
         sidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >
@@ -37,7 +37,7 @@ const Sidebar = ({ sidebarOpen }) => {
         {sidebarData?.links?.map((obj, index) => (
           <button
             key={index}
-            className="text-[#c09028] sidelink w-full py-[11px] text-[16px] text-white"
+            className="sidelink w-full py-[11px] text-[16px] text-white"
           >
             {obj.title}
           </button>

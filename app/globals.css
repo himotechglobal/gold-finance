@@ -74,11 +74,6 @@ body {
 }
 
 .ellipse1 {
-  z-index: -1;
-  width: 710px;
-  height: 710px;
-  border-radius: 710px;
-  background: #f9e998;
   filter: blur(250px);
 }
 

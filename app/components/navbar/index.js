@@ -50,7 +50,9 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-          <Button text={"Connect"} />
+          <div className="hidden lg:flex flex-1 justify-end">
+            <button className="navbtn">Connect</button>
+          </div>
         </nav>
       </header>
       <Sidebar sidebarOpen={sidebarOpen} />

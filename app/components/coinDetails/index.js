@@ -112,11 +112,11 @@ const CoinDetails = () => {
   ];
   return (
     <Wrapper>
-      <div className="flex items-center justify-between flex-wrap">
+      <div className="flex items-center justify-between max-xl:flex-col">
         <div className="flex flex-col gap-10">
           {coinDetailsData?.map((signleCoin, index) => {
             return (
-              <div className="cointDetails lg:w-[520px] lg:h-[293px] p-4">
+              <div className="cointDetails sm:w-[520px] sm:h-[293px] w-[389px] p-4">
                 <div key={index + 1}>
                   <div className="flex items-center justify-between">
                     <h2 className="heading">{signleCoin?.name}</h2>
@@ -125,8 +125,12 @@ const CoinDetails = () => {
                       {signleCoin?.sellTax}
                     </span>
                   </div>
-                  <div className="flex items-center justify-between my-5">
-                    <Image src={signleCoin?.image} alt={signleCoin?.name} />
+                  <div className="flex items-center justify-between my-5 max-sm:gap-5">
+                    <Image
+                      src={signleCoin?.image}
+                      alt={signleCoin?.name}
+                      className="max-sm:w-[80px] max-sm:h-[80px]"
+                    />
                     <div className="price text-[18px] flex items-center justify-center">
                       <div className="flex items-baseline gap-5">
                         <span className="">Current Price </span>
