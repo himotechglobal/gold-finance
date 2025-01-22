@@ -6,7 +6,6 @@ const CoinFtmLp = ({ coinDetailsFtmData }) => {
   return (
     <div className="flex flex-col gap-10 max-xl:mt-10">
       {coinDetailsFtmData?.map((signleCoin, index) => {
-        console.log(signleCoin);
         return (
           <div className="cointDetails sm:w-[520px] sm:h-[293px] w-[389px] p-4">
             <div key={index + 1}>
@@ -44,7 +43,9 @@ const CoinFtmLp = ({ coinDetailsFtmData }) => {
                 {signleCoin?.details?.map((singleDetail, index) => {
                   return (
                     <div key={index + 1}>
-                      <h3 className="text-[18px]">{singleDetail?.title}</h3>
+                      <h3 className="max-sm:text-[14px] text-[18px]">
+                        {singleDetail?.title}
+                      </h3>
                       <span className="font-[600]">{singleDetail?.amount}</span>
                     </div>
                   );

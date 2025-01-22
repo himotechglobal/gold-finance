@@ -144,7 +144,9 @@ const CoinDetails = () => {
                     {signleCoin?.details?.map((singleDetail, index) => {
                       return (
                         <div key={index + 1}>
-                          <h3 className="text-[18px]">{singleDetail?.title}</h3>
+                          <h3 className="max-sm:text-[14px] text-[18px]">
+                            {singleDetail?.title}
+                          </h3>
                           <span className="font-[600]">
                             {singleDetail?.amount}
                           </span>

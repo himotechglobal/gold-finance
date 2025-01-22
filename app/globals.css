@@ -13,7 +13,7 @@ body {
 }
 .navbtn {
   display: inline-flex;
-  padding: 10px 15px;
+  padding: 5px 15px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -107,4 +107,16 @@ body {
   gap: 10px;
   border-radius: 5px;
   background-color: #242f3e;
+}
+
+.sidebar-container::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-container {
+  scrollbar-width: none;
+}
+
+.sidebar-container {
+  -ms-overflow-style: none;
 }

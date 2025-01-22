@@ -5,7 +5,6 @@ import Image from "next/image";
 import logo from "../../assets/logo.svg";
 import ham from "../../assets/ham.svg";
 import Link from "next/link";
-import Button from "../button";
 import Sidebar from "../sidebar";
 
 const navigation = [
